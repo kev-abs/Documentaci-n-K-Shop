@@ -1,0 +1,190 @@
+K_SHOP Sistema de Gestión e Inventario
+
+Título del Proyecto: K_SHOP – Sistema de Gestión e Inventario
+Fecha: (Por definir)
+Preparado para: Cliente
+Preparado por: Kevyn Abella, Kevin Méndez, Manuel Rivera, Santiago Salgado
+
+1. VISIÓN GENERAL DEL PROYECTO
+
+K_SHOP es un sistema de gestión e inventario diseñado para apoyar a negocios reales del sector de la moda que no cuentan con una plataforma digital de ventas ni control automatizado. Su objetivo principal es optimizar la administración de usuarios, productos, ventas e inventarios mediante la digitalización de los procesos comerciales, permitiendo a la tienda ofrecer compras en línea, mejorar la organización interna y ampliar su alcance hacia nuevos clientes.
+
+2. PROBLEMA O NECESIDAD ACTUAL
+
+La tienda K-SHOP, situada en Rafael Uribe Uribe, enfrenta varios desafíos que afectan directamente sus ingresos y su crecimiento.
+
+Actualmente carece de un sistema de información eficiente para gestionar ventas, usuarios e inventarios. Los clientes deben visitar físicamente el local para conocer los productos, lo que limita el alcance del negocio y reduce las oportunidades de aumentar las ventas.
+
+Además, no existe un sistema sólido para la gestión de usuarios, lo que dificulta la fidelización de clientes y la mejora de la experiencia de compra. Sin un mecanismo adecuado para captar y administrar la información de los clientes, la tienda depende únicamente del contacto presencial, impidiendo personalizar la experiencia y conocer las preferencias de los usuarios.
+
+Otro aspecto crítico es la falta de un sistema automatizado de inventarios y control de ventas. Esto puede provocar desabastecimientos o acumulación innecesaria de mercancía. Asimismo, la ausencia de reportes claros impide conocer los productos más vendidos y los ingresos reales, afectando la toma de decisiones estratégicas.
+
+2.1 Problemas principales
+
+-Procesos manuales para ventas e inventarios.
+
+-Ausencia de gestión de usuarios y clientes.
+
+-Poco control del stock y de los ingresos reales.
+
+2.2 Consecuencias
+
+-Pérdida de oportunidades de venta.
+
+-Desorganización del inventario.
+
+-Dificultad para fidelizar clientes.
+
+Limitaciones para el crecimiento del negocio.
+
+3. LA SOLUCIÓN PROPUESTA
+
+K_SHOP se presenta como una solución integral que automatiza y centraliza la operación de la tienda mediante una plataforma web moderna y fácil de usar.
+
+Módulos principales
+
+Módulo de Usuarios
+
+Registro e inicio de sesión.
+
+Gestión de clientes y administradores.
+
+Historial de compras y preferencias.
+
+Módulo de Productos
+
+Registro, edición y eliminación de productos.
+
+Organización por categorías.
+
+Visualización en el catálogo en línea.
+
+Módulo de Ventas
+
+Gestión de pedidos.
+
+Control de pagos.
+
+Seguimiento del estado de compra.
+
+Módulo de Inventario
+
+Control automático del stock.
+
+Actualización por cada venta.
+
+Reportes de productos más vendidos.
+
+4. BENEFICIOS Y VALOR ENTREGADO
+
+La implementación de K_SHOP permitirá modernizar la operación del negocio y mejorar su competitividad.
+
+4.1 Beneficios operativos
+
+Reducción de errores manuales en registros de ventas.
+
+Mayor organización del inventario.
+
+Acceso a la información en tiempo real.
+
+Mejor experiencia para el cliente mediante compras en línea.
+
+4.2 Beneficios estratégicos
+
+Mayor alcance del negocio a través de internet.
+
+Fidelización de clientes.
+
+Apoyo a la toma de decisiones con reportes.
+
+Incremento potencial de las ventas.
+
+5. FACTORES DIFERENCIADORES
+
+Diseñado específicamente para tiendas de ropa.
+
+Panel de administración intuitivo.
+
+Interfaz simple y fácil de usar.
+
+Adaptable a dispositivos móviles.
+
+Organización clara de ventas e inventarios.
+
+6. CRONOGRAMA DE IMPLEMENTACIÓN
+
+El desarrollo de K_SHOP está planteado para alcanzar un 80% de funcionalidad en un plazo aproximado de 1 año y medio, iniciando en junio de 2024.
+
+Fase	    Duración	    Actividades
+Análisis	3 meses	        Levantamiento de requerimientos y diseño.
+Desarrollo	9 meses	        Construcción de módulos principales.
+Pruebas	    4 meses	        Validación del sistema y correcciones.
+Ajustes	    2 meses	        Optimización y preparación final.
+
+7. INVERSIÓN Y COSTOS
+
+La inversión para la implementación de K_SHOP se basa en la adquisición de infraestructura tecnológica y en el desarrollo del sistema. A partir de las cotizaciones y comparaciones realizadas, se contemplan principalmente equipos de cómputo, periféricos, licencias y posible servidor.
+
+7.1 Inversión en infraestructura (referencial)
+
+De acuerdo con los cuadros comparativos analizados, se consideran elementos como:
+
+CPU / Torre administrativa.
+
+Monitor.
+
+Unidad de estado sólido (SSD).
+
+Memoria RAM.
+
+Teclado y mouse.
+
+Portátil administrativo.
+
+Servidor.
+
+Licencias de sistema operativo.
+
+El análisis entre proveedores permite seleccionar siempre el precio más bajo manteniendo características adecuadas para operación comercial.
+
+Como referencia global, la inversión estimada en infraestructura se encuentra en un rango aproximado entre:
+
+COP $28.000.000 – $36.000.000, dependiendo del proveedor seleccionado y la configuración final.
+
+7.2 Inversión en software y operación
+
+Incluye:
+
+Desarrollo e implementación del sistema K_SHOP.
+
+Configuración inicial.
+
+Pruebas funcionales.
+
+Ajustes según el negocio.
+
+Capacitación básica.
+
+Estos valores se ajustarán después de la reunión con el cliente y la definición final del alcance.
+
+8. RIESGOS DE NO ACTUAR
+
+Si la tienda K-SHOP no implementa el sistema, se mantienen riesgos importantes para el negocio:
+
+Persistirá el desorden en el inventario, generando faltantes o exceso de mercancía.
+
+Los clientes no tendrán una experiencia de compra moderna ni personalizada.
+
+El negocio quedará en desventaja frente a la competencia digital.
+
+El crecimiento se verá limitado por procesos manuales e ineficientes.
+
+9. PRÓXIMOS PASOS
+
+(Se definirá después de realizar la reunión con el cliente para validar alcance, tiempos y ajustes finales del sistema.)
+
+10. CONCLUSIÓN
+
+(K_SHOP representa una inversión estratégica orientada al crecimiento empresarial de la tienda. No solo moderniza la gestión del inventario y las ventas, sino que también abre la puerta al comercio en línea, mejorando la experiencia del cliente y fortaleciendo la competitividad del negocio.
+
+La implementación del sistema permitirá a K-SHOP organizar sus procesos, tomar decisiones basadas en datos reales y proyectarse como un negocio actualizado, eficiente y preparado para escalar en el mercado digital.)
