@@ -21,25 +21,25 @@ Lograr la modernización operativa de K-SHOP mediante la implementación de una 
 
 ### A. Procesos Manuales y Desorganización
 
-✗ Control de inventario sin sistema automatizado.
-✗ Registro manual de ventas.
-✗ Falta de trazabilidad clara sobre productos más vendidos.
+Control de inventario sin sistema automatizado.
+Registro manual de ventas.
+Falta de trazabilidad clara sobre productos más vendidos.
 
 **Impacto estimado:**
 Pérdida aproximada de 15 a 20 horas semanales en tareas administrativas repetitivas.
 
 ### B. Falta de Gestión Estructurada de Clientes
 
-✗ No existe un sistema para registrar usuarios y su historial.
-✗ Dificultad para fidelizar clientes.
+No existe un sistema para registrar usuarios y su historial.
+Dificultad para fidelizar clientes.
 
 **Impacto estimado:**
 Limitación en estrategias de crecimiento y retención.
 
 ### C. Limitaciones Tecnológicas
 
-✗ Ausencia de plataforma digital integral.
-✗ Falta de herramientas modernas para pagos y control administrativo.
+Ausencia de plataforma digital integral.
+Falta de herramientas modernas en control administrativo.
 
 **Resumen del Impacto Actual:**
 
@@ -57,6 +57,7 @@ Plataforma tecnológica desarrollada para automatizar y centralizar la gestión 
 ### Módulo de Usuarios
 
 * Registro e inicio de sesión.
+* logout
 * Gestión de roles (cliente / administrador).
 * Panel del cliente.
 
@@ -167,9 +168,9 @@ El cliente podrá inicialmente probar una versión demo del sistema para validar
 
 Contacto Principal:
 Kevyn Abella
-Cargo: N/A
-Email: ____________________________
-Teléfono: ____________________________
+Cargo: Analista
+Email: kevynabella025@outlook.es
+Teléfono: 3197819377
 
 
 ACEPTACIÓN DE LA PROPUESTA

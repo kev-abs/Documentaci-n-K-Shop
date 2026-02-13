@@ -5,21 +5,21 @@ Fecha: (Por definir)
 Preparado para: Cliente
 Preparado por: Kevyn Abella, Kevin Méndez, Manuel Rivera, Santiago Salgado
 
-1. VISIÓN GENERAL DEL PROYECTO
+## 1. VISIÓN GENERAL DEL PROYECTO ##
 
-K_SHOP es un sistema de gestión e inventario diseñado para apoyar a negocios reales del sector de la moda que no cuentan con una plataforma digital de ventas ni control automatizado. Su objetivo principal es optimizar la administración de usuarios, productos, ventas e inventarios mediante la digitalización de los procesos comerciales, permitiendo a la tienda ofrecer compras en línea, mejorar la organización interna y ampliar su alcance hacia nuevos clientes.
+K_SHOP es un sistema de gestión e inventario diseñado para apoyar a negocios reales del sector de la moda que no cuentan con una plataforma digital de ventas ni control automatizado. Su objetivo principal es optimizar la administración de usuarios, productos, ventas e inventarios mediante la digitalización de los procesos comerciales, permitiendo a la tienda ofrece mejorar la organización interna y ampliar su alcance hacia nuevos clientes.
 
-2. PROBLEMA O NECESIDAD ACTUAL
+## 2. PROBLEMA O NECESIDAD ACTUAL ##
 
 La tienda K-SHOP, situada en Rafael Uribe Uribe, enfrenta varios desafíos que afectan directamente sus ingresos y su crecimiento.
 
 Actualmente carece de un sistema de información eficiente para gestionar ventas, usuarios e inventarios. Los clientes deben visitar físicamente el local para conocer los productos, lo que limita el alcance del negocio y reduce las oportunidades de aumentar las ventas.
 
-Además, no existe un sistema sólido para la gestión de usuarios, lo que dificulta la fidelización de clientes y la mejora de la experiencia de compra. Sin un mecanismo adecuado para captar y administrar la información de los clientes, la tienda depende únicamente del contacto presencial, impidiendo personalizar la experiencia y conocer las preferencias de los usuarios.
+Además, no existe un sistema sólido para la gestión de usuarios, lo que dificulta la fidelización de clientes. Sin un mecanismo adecuado para captar y administrar la información de los clientes, la tienda depende únicamente del contacto presencial, impidiendo personalizar la experiencia y conocer las preferencias de los usuarios.
 
 Otro aspecto crítico es la falta de un sistema automatizado de inventarios y control de ventas. Esto puede provocar desabastecimientos o acumulación innecesaria de mercancía. Asimismo, la ausencia de reportes claros impide conocer los productos más vendidos y los ingresos reales, afectando la toma de decisiones estratégicas.
 
-2.1 Problemas principales
+## 2.1 Problemas principales ##
 
 -Procesos manuales para ventas e inventarios.
 
@@ -27,7 +27,7 @@ Otro aspecto crítico es la falta de un sistema automatizado de inventarios y co
 
 -Poco control del stock y de los ingresos reales.
 
-2.2 Consecuencias
+## 2.2 Consecuencias ##
 
 -Pérdida de oportunidades de venta.
 
@@ -37,7 +37,7 @@ Otro aspecto crítico es la falta de un sistema automatizado de inventarios y co
 
 Limitaciones para el crecimiento del negocio.
 
-3. LA SOLUCIÓN PROPUESTA
+## 3. LA SOLUCIÓN PROPUESTA ##
 
 K_SHOP se presenta como una solución integral que automatiza y centraliza la operación de la tienda mediante una plataforma web moderna y fácil de usar.
 
@@ -45,37 +45,40 @@ Módulos principales
 
 Módulo de Usuarios
 
-Registro e inicio de sesión.
+-Registro e inicio de sesión.
 
-Gestión de clientes y administradores.
+-Logout.
 
-Historial de compras y preferencias.
+-Gestión de clientes y administradores.
+
 
 Módulo de Productos
 
-Registro, edición y eliminación de productos.
+-Registro, edición y eliminación de productos.
 
-Organización por categorías.
+-Organización por categorías.
 
-Visualización en el catálogo en línea.
+-Visualización en el catálogo en línea.
+
 
 Módulo de Ventas
 
-Gestión de pedidos.
+-Gestión de pedidos.
 
-Control de pagos.
+-Seguimiento del estado de compra.
 
-Seguimiento del estado de compra.
 
 Módulo de Inventario
 
-Control automático del stock.
+-Control automático del stock.
 
-Actualización por cada venta.
+-Actualización por cada venta.
 
-Reportes de productos más vendidos.
+-Reportes de productos más vendidos.
 
-4. BENEFICIOS Y VALOR ENTREGADO
+-Historial de compras y preferencias.
+
+## 4. BENEFICIOS Y VALOR ENTREGADO ##
 
 La implementación de K_SHOP permitirá modernizar la operación del negocio y mejorar su competitividad.
 
