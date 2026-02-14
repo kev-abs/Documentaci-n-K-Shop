@@ -1,0 +1,283 @@
+Proyecto: K_SHOP – Sistema de Gestión e Inventario
+Cliente / Organización: PROYECTO ACADÉMICO SENA
+Fecha: 13 / 02 / 2026
+Responsable del proyecto: Kevyn Steve Abella Sanchez, Santiago Salgado, Kevin Alexis Mendez Vega, Manuel Julian Rivera Restrepo
+Versión: inicial
+Estado: En revisión
+
+ ## 1. OBJETIVO DE LA MIGRACIÓN
+
+Describir el propósito general del proceso de migración de datos:
+-- La migración tiene como objetivo trasladar la información del sistema desarrollado en PHP puro hacia una nueva arquitectura basada en Laravel y Spring Boot con base de datos MySQL, permitiendo mejorar la organización del código, la escalabilidad del sistema, la seguridad y la integración mediante API. El proceso busca conservar la integridad de los datos existentes y optimizar la gestión de los módulos principales del sistema K_SHOP.
+
+Objetivos específicos:
+
+-- Garantizar integridad de datos
+-- Minimizar interrupción operativa
+-- Asegurar trazabilidad del proceso
+-- Permitir rollback en caso de falla
+-- Validar consistencia post-migración
+
+Otros: Modernización tecnológica y mejora de mantenimiento del sistema.
+
+## 2. ANÁLISIS DE DATOS EXISTENTES
+## 2.1 Inventario de Datos a Migrar
+| Entidad    | Cantidad estimada | Formato origen | Prioridad | Observaciones                 |
+| ---------- | ----------------- | -------------- | --------- | ------------------------------|      
+| Usuarios   | ~20               | MySQL / PHP    | Alta      | Datos de acceso               |
+| Productos  | ~20               | MySQL / PHP    | Alta      | Incluye información comercial | !!!!
+| Inventario | ~20               | MySQL / PHP    | Alta      | Control de stock              |
+| Ventas     | ~20               | MySQL / PHP    | Media     | Historial transaccional       |
+
+Total estimado de registros: ~80 registros
+
+## 2.2 Estructura del Sistema Destino
+
+Describir tablas principales y campos:
+
+Tabla: producto
+•	ID_Producto (INT, PK)
+•	Nombre (VARCHAR)
+•	Descripcion (TEXT)
+•	Precio (DECIMAL)
+•   Stock(INT)
+•   ID_Proveedor(INT,FK)
+•   Imagen(VARCHAR)
+•   Estado(VARCHAR)
+
+Tabla: empleado
+•	ID_Empleado (INT, PK)
+•	Nombre (VARCHAR)
+•	Cargo (VARCHAR)
+•	Correo (VARCHAR)
+•   Contraseña (VARCHAR)
+•   Fecha_Contratacion (DATE)
+•   Estado (ENUM:('Activo','Inactivo','Suspendido'))
+•   Foto (VARCHAR)
+
+Tabla: cupon 
+•	ID_Cupon (INT, PK)
+•	Codigo (VARCHAR)
+•	Descuento (DECIMAL)
+•	Fecha_Expiracion (DATE)
+
+Tabla: pedido
+•	ID_Pedido (INT, PK)
+•	ID_Cliente (INT,FK)
+•	Fecha (TIMESTAMP)
+•	Total (DECIMAL)
+•   Estado (VARCHAR)
+
+## 3. ESTRATEGIA DE MIGRACIÓN
+
+Tipo de estrategia seleccionada:
+☐ Big Bang
+☑ Migración incremental
+☐ Migración paralela
+☐ Híbrida
+
+Justificación:
+--Se realizará una migración incremental debido a que el sistema será trasladado progresivamente desde PHP puro hacia una nueva arquitectura basada en Laravel y Spring Boot. Esto permite reducir riesgos, validar cada módulo antes de la transición completa y asegurar estabilidad operativa durante el proceso.
+
+## 4. FASES DEL PLAN DE MIGRACIÓN
+
+## FASE 0: PREPARACIÓN
+## 0.1 Recopilación de datos
+
+Duración estimada: 2 días
+Responsable: Equipo de proyecto
+
+Actividades:
+
+☑ Identificación de fuentes
+☑ Recolección de archivos
+☐ Digitalización de información física
+☑ Validación de accesos
+☑ Otros: revisión de estructura actual en PHP puro
+
+## 0.2 Análisis y Normalización
+
+☑ Eliminación de duplicados
+☑ Estandarización de formatos
+☑ Validación de campos obligatorios
+☑ Definición de reglas de negocio
+
+Criterios de calidad:
+
+| Campo	         | Regla de validación             |
+|----------------|---------------------------------|
+| email          | usuario	formato válido y único |
+| precio         | producto	valor numérico positivo|
+| stock 	     | número entero mayor o igual a 0 |
+| fecha venta	 | formato datetime válido         |
+
+## 0.3 Preparación del Entorno
+
+☑ Creación de base de datos de pruebas
+☑ Configuración de tablas
+☑ Configuración de permisos
+☑ Preparación de scripts
+☑ Configuración de backups
+
+## FASE 1: MIGRACIÓN DE DATOS MAESTROS
+## 1.1 Migración de usuarios
+
+Duración: 1 día
+Prioridad: ☑ Alta ☐ Media ☐ Baja
+
+Proceso:
+-- Extracción desde PHP/MySQL
+-- Transformación al nuevo modelo
+-- Validación
+-- Carga en base de datos destino
+-- Verificación
+
+Validaciones:
+
+☑ Conteo correcto
+☑ Sin datos nulos en campos obligatorios
+☑ Sin duplicados
+☑ Consistencia con reglas de negocio
+
+## 1.2 Migración de productos
+
+Proceso similar al anterior:
+
+Extracción → Transformación → Validación → Carga → Verificación.
+
+## FASE 2: MIGRACIÓN DE DATOS TRANSACCIONALES
+## 2.1 Migración de ventas y carrito de compras
+
+Complejidad: ☑ Media
+
+Validaciones:
+
+☑ Integridad referencial
+☑ Totales correctos
+☑ Fechas válidas
+☑ No duplicidad
+
+## 2.2 Ajustes Críticos
+
+Ejemplo: inventario, saldos, estados.
+
+Proceso:
+-- Recalcular stock según ventas migradas.
+-- Validar consistencia entre inventario y productos.
+-- Ajustar estados de pedidos activos.
+
+## FASE 3: VALIDACIÓN Y PRUEBAS
+## 3.1 Validación Técnica
+
+Describir consultas o métodos utilizados:
+
+-- Conteo de registros origen vs destino.
+-- Consultas SQL de verificación.
+-- Pruebas mediante API Spring Boot.
+
+Resultado esperado:
+-- Datos completos.
+-- Sin errores críticos.
+-- Sistema funcionando correctamente.
+
+## 3.2 Pruebas de Usuario (UAT)
+
+Casos de prueba:
+
+-- Inicio de sesión con usuario migrado.
+
+-- Crear venta desde carrito de compras.
+
+-- Consulta de inventario actualizado.
+
+Criterio de aceptación:
+
+El sistema debe permitir operar sin errores y mostrar información consistente con el sistema anterior.
+
+## FASE 4: GO-LIVE
+
+Fecha programada: Pendiente
+Horario: Pendiente
+
+Actividades:
+
+☑ Backup final
+☑ Activación modo mantenimiento
+☑ Migración final
+☑ Validación
+☑ Activación del sistema
+
+Plan de Rollback
+
+Condiciones para revertir:
+
+☑ Pérdida de datos
+☑ Fallas críticas
+☑ Inconsistencias graves
+
+Procedimiento:
+
+Restaurar backup previo.
+
+Desactivar sistema nuevo.
+
+Reactivar sistema anterior en PHP.
+
+## 5. GESTIÓN DE RIESGOS
+
+| Riesgo                         | Probabilidad | Impacto | Mitigación              | Plan alterno       |
+| ------------------------------ | ------------ | ------- | ----------------------- | ------------------ |
+| Pérdida de datos               | Media        | Alta    | Backups previos         | Restaurar respaldo |
+| Incompatibilidad de estructura | Media        | Media   | Pruebas en entorno test | Ajuste de scripts  |
+| Datos duplicados               | Baja         | Media   | Validación previa       | Limpieza manual    |
+| Error en migración incremental | Media        | Alta    | Validaciones por fases  | Reversión parcial  |
+
+
+## 6. CRITERIOS DE ÉXITO
+| Indicador                  | Meta      |
+| -------------------------- | --------- |
+| Registros migrados         | 100%      |
+| Errores críticos           | 0         |
+| Funcionamiento del sistema | Operativo |
+
+Criterios de aceptación final:
+
+☑ Datos completos
+☑ Sin errores críticos
+☑ Sistema operativo
+☑ Usuarios capacitados
+☑ Documentación entregada
+
+## 7. CRONOGRAMA GENERAL
+
+-- Semana 1: Preparación del entorno y análisis de datos
+-- Semana 2: Migración de datos maestros (usuarios y productos)
+-- Semana 3: Migración de datos transaccionales (ventas e inventario)
+-- Semana 4: Validación, pruebas finales y Go-Live
+
+Duración total estimada: 4 semanas
+
+## 8. ROLES Y RESPONSABILIDADES
+| Rol           | Nombre                               | Responsabilidades                                              |
+| ------------- | ------------------------------------ | -------------------------------------------------------------- |
+| Líder técnico | Kevyn Steve Abella Sanchez (ejemplo) | Definir arquitectura, supervisar migración, validar resultados |
+| Usuario clave | Equipo de proyecto                   | Pruebas funcionales y validación                               |
+| Cliente       | Pendiente                            | Aprobación final                                               | ??????
+| Soporte       | Equipo técnico                       | Corrección de errores                                          |
+
+## 9. ENTREGABLES
+
+☑ Base de datos migrada
+☑ Informe final
+☑ Scripts documentados
+☑ Backups
+☑ Manual actualizado
+☑ Acta de aceptación
+
+## 10. APROBACIONES
+| Rol           | Nombre                     | Firma | Fecha |
+| ------------- | -------------------------- | ----- | ----- |
+| Líder Técnico | Kevyn Steve Abella Sanchez |       |       |
+| Cliente       | Pendiente                  |       |       |
+| Gerente       | Pendiente                  |       |       |
+	
