@@ -71,10 +71,9 @@ Plataforma tecnológica desarrollada para automatizar y centralizar la gestión 
 
 **Beneficio:** Reduce errores y desabastecimientos.
 
-### Módulo de Pagos y Ventas
+### Módulo de Ventas
 
 * Gestión de pedidos.
-* Pagos en línea.
 * Control de estados de compra.
 
 **Beneficio:** Moderniza el proceso comercial.
@@ -89,7 +88,6 @@ Plataforma tecnológica desarrollada para automatizar y centralizar la gestión 
 ### Módulo de Envíos
 
 * Gestión de estados de envío.
-* Seguimiento de pedidos.
 
 **Beneficio:** Mayor control logístico.
 
@@ -119,23 +117,26 @@ La reducción de tiempo operativo y la mejora en control de inventario pueden ge
 
 ### Beneficios Operativos
 
-Eliminación de tareas manuales.
-Información en tiempo real.
-Mayor organización.
-Mejora en la experiencia del cliente.
+* Eliminación de tareas manuales.
+* Información en tiempo real.
+* Mayor organización.
+* Mejora en la experiencia del cliente.
 
-# 6. INVERSIÓN REQUERIDA
+## 6. INVERSIÓN REQUERIDA
+## A. Valor en Tiempo de Desarrollo
 
-## A. Costo de Implementación
+TIEMPO TOTAL ESTIMADO: 400+ horas de desarrollo (8 semanas)
 
-VALOR TOTAL: (Por definir en reunión)
-
+El valor del proyecto se calcula con base en el tiempo estimado de programación, análisis, diseño, pruebas e implementación del sistema.
 Incluye:
 
-Configuración del sistema
-Implementación
-Pruebas
-Capacitación inicial
+* Levantamiento y validación de requerimientos
+* Diseño de base de datos y arquitectura
+* Desarrollo de módulos (usuarios, productos, carrito, pedidos, reportes, inventario)
+* Integración del sistema completo
+* Pruebas funcionales y corrección de errores
+* Documentación técnica
+* Capacitación básica de uso del sistema
 
 **Forma de pago propuesta:** Cuotas acordadas entre ambas partes.
 
@@ -147,12 +148,19 @@ Capacitación inicial
 
 **Duración estimada:** Implementación real en fases estructuradas.
 
-| Fase   | Duración    | Actividad                  | Entregable         |
-| ------ | ----------- | -------------------------- | ------------------ |
-| Fase 1 | Análisis    | Revisión de requerimientos | Documento validado |
-| Fase 2 | Desarrollo  | Configuración del sistema  | Sistema funcional  |
-| Fase 3 | Pruebas     | Ajustes y validaciones     | Sistema optimizado |
-| Fase 4 | Lanzamiento | Puesta en producción       | Sistema operativo  |
++-------------------------+------------------+-------------------------------------------------------------+----------------------------------------------+
+| Fase                    | Duración         | Actividad                                                   | Entregable                                   |
++-------------------------+------------------+-------------------------------------------------------------+----------------------------------------------+
+| Fase 1 – Análisis       | Semana 1 a 2     | Levantamiento y validación de requerimientos                | Documento de requerimientos aprobado         |
++-------------------------+------------------+-------------------------------------------------------------+----------------------------------------------+
+| Fase 2 – Diseño         | Semana 3         | Diseño de base de datos, arquitectura y prototipos         | Modelo de datos y diseño estructural         |
++-------------------------+------------------+-------------------------------------------------------------+----------------------------------------------+
+| Fase 3 – Desarrollo     | Semana 4 a 6     | Programación de módulos principales del sistema            | Sistema funcional integrado                  |
++-------------------------+------------------+-------------------------------------------------------------+----------------------------------------------+
+| Fase 4 – Pruebas        | Semana 7         | Pruebas funcionales, correcciones y validaciones           | Sistema optimizado y validado                |
++-------------------------+------------------+-------------------------------------------------------------+----------------------------------------------+
+| Fase 5 – Implementación | Semana 8         | Despliegue final y entrega del sistema                     | Sistema operativo y documentación final      |
++-------------------------+------------------+-------------------------------------------------------------+----------------------------------------------+
 
 # 8. SOPORTE Y GARANTÍAS
 

@@ -102,7 +102,7 @@ Apoyo a la toma de decisiones con reportes.
 
 Incremento potencial de las ventas.
 
-5. FACTORES DIFERENCIADORES
+## 5. FACTORES DIFERENCIADORES
 
 Diseñado específicamente para tiendas de ropa.
 
@@ -114,7 +114,7 @@ Adaptable a dispositivos móviles.
 
 Organización clara de ventas e inventarios.
 
-6. CRONOGRAMA DE IMPLEMENTACIÓN
+## 6. CRONOGRAMA DE IMPLEMENTACIÓN
 
 El desarrollo de K_SHOP está planteado para alcanzar un 80% de funcionalidad en un plazo aproximado de 1 año y medio, iniciando en junio de 2024.
 
@@ -124,11 +124,11 @@ Desarrollo	9 meses	        Construcción de módulos principales.
 Pruebas	    4 meses	        Validación del sistema y correcciones.
 Ajustes	    2 meses	        Optimización y preparación final.
 
-7. INVERSIÓN Y COSTOS
+## 7. INVERSIÓN Y COSTOS
 
 La inversión para la implementación de K_SHOP se basa en la adquisición de infraestructura tecnológica y en el desarrollo del sistema. A partir de las cotizaciones y comparaciones realizadas, se contemplan principalmente equipos de cómputo, periféricos, licencias y posible servidor.
 
-7.1 Inversión en infraestructura (referencial)
+* 7.1 Inversión en infraestructura (referencial)
 
 De acuerdo con los cuadros comparativos analizados, se consideran elementos como:
 
@@ -154,7 +154,7 @@ Como referencia global, la inversión estimada en infraestructura se encuentra e
 
 COP $28.000.000 – $36.000.000, dependiendo del proveedor seleccionado y la configuración final.
 
-7.2 Inversión en software y operación
+* 7.2 Inversión en software y operación
 
 Incluye:
 
@@ -170,7 +170,7 @@ Capacitación básica.
 
 Estos valores se ajustarán después de la reunión con el cliente y la definición final del alcance.
 
-8. RIESGOS DE NO ACTUAR
+## 8. RIESGOS DE NO ACTUAR
 
 Si la tienda K-SHOP no implementa el sistema, se mantienen riesgos importantes para el negocio:
 
@@ -182,11 +182,11 @@ El negocio quedará en desventaja frente a la competencia digital.
 
 El crecimiento se verá limitado por procesos manuales e ineficientes.
 
-9. PRÓXIMOS PASOS
+## 9. PRÓXIMOS PASOS
 
 (Se definirá después de realizar la reunión con el cliente para validar alcance, tiempos y ajustes finales del sistema.)
 
-10. CONCLUSIÓN
+## 10. CONCLUSIÓN
 
 (K_SHOP representa una inversión estratégica orientada al crecimiento empresarial de la tienda. No solo moderniza la gestión del inventario y las ventas, sino que también abre la puerta al comercio en línea, mejorando la experiencia del cliente y fortaleciendo la competitividad del negocio.
 
